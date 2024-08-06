@@ -4,15 +4,19 @@ import React, { useEffect, useState } from 'react'
 
 function Card() {
 
-const [dataJson ,  setDataJson] = useState()
+const [cardItem ,  setCardItem] = useState()
 
-useEffect( () => {
-    setDataJson( fetch('../data.json')
-    .then( response => response.json())
-    .then( data => console.log(data)
-     )
-)
-})
+useEffect(
+  ()=> {
+  fetch('http://localhost:5174/src/data/data.json')
+  .then((response) => response.json())
+  .then( (data) => setCardItem(data))
+  }, []
+ )
+
+ console.log(cardItem);
+ 
+
 
 
   return (
