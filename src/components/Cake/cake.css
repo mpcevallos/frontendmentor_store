@@ -1,12 +1,25 @@
 
-
 .card__body{
-   border: 1px solid;
+   width: 200px;
+}
+.card__body p{
+    color:  hsl(14, 25%, 72%);
 }
 
+.card__img > img{
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 .cake__category{
     font-size: 0.8rem;
 }
 .cake__name{
+    color: hsl(14, 65%, 9%);
     font-size: 1rem;
+}
+.cake__price{
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
 }

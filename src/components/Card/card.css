@@ -1,9 +1,48 @@
+
 .main__cake{
-
+  display: flex;  
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .section__cake{
    display: grid;
    grid-template-columns: repeat(3, 300px);
    gap: 10px;
+   align-items: center;
+   justify-items: center;
+}
+@media (max-width:970px) {
+   /* .main__cake{
+      flex-direction: column;
+   } */
+   .section__cake{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      
+   }
+   
+   
+}
+@media (max-width:600px) {
+   .main__cake{
+      flex-wrap: wrap;
+   }
+   .section__cake{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      
+   }
+}
+@media (max-width:345px) {
+   .main__cake{
+      flex-wrap: wrap;
+   }
+   .section__cake{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
