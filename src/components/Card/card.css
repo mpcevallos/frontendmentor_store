@@ -1,0 +1,9 @@
+.main__cake{
+
+}
+
+.section__cake{
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   gap: 10px;
+}

@@ -1,0 +1,12 @@
+
+
+.card__body{
+   border: 1px solid;
+}
+
+.cake__category{
+    font-size: 0.8rem;
+}
+.cake__name{
+    font-size: 1rem;
+}
