@@ -1,4 +1,11 @@
+@font-face {
+   font-family:'RedHatText-Italic-VariableFont_wght' ;
+   src: url('../public/assets/fonts/RedHatText-VariableFont_wght.ttf');
+}
 
+#root{
+   font-family:'RedHatText-Italic-VariableFont_wght' ;
+}
 .main__cake{
   display: flex;  
   justify-content: space-around;
@@ -11,6 +18,84 @@
    align-items: center;
    justify-items: center;
 }
+
+/* card cakes stilos */
+
+
+
+.card__body{
+   width: 200px;
+}
+.card__body p{
+    color:  hsl(14, 25%, 72%);
+}
+
+.card__img > img{
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.cake__category{
+    font-size: 0.8rem;
+}
+.cake__name{
+    color: hsl(14, 65%, 9%);
+    font-size: 1rem;
+}
+.cake__price{
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+
+
+/* carrito  */
+.main__carrito{
+   width: 260px;
+   background-color: hsl(20, 50%, 98%);
+   height: 200px;
+   min-height: 400px;
+   border-radius: 10px;
+
+}
+
+.you__cart__product{
+   color: hsl(14, 86%, 42%);
+}
+.container__price{
+   display: flex;
+   justify-content: space-between;
+   gap: 6px;
+   border-bottom: 1px solid;
+   
+}
+.name__cake , .amount , .price__product , .amount__product{
+   padding: 6px  4px;
+   font-size: 0.8rem;
+   font-weight: bold;
+   color: hsl(14, 65%, 9%);
+}
+.arroba{
+   font-size: 0.5rem;
+}
+.amount{
+   color: hsl(14, 86%, 42%);
+}
+.price__product {
+   opacity: 0.5;
+}
+.delete__cart{
+   margin-right: 10px;
+   cursor: pointer;
+   user-select: none;
+}
+.total__price{
+   text-align: center;
+}
+
+
+
+
 @media (max-width:970px) {
    /* .main__cake{
       flex-direction: column;
